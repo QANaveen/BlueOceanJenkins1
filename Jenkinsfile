@@ -8,5 +8,11 @@ pipeline {
       }
     }
 
+    stage('Build') {
+      steps {
+        bat 'mvn -f C:\\Users\\User\\.jenkins\\workspace\\BlueOceanJenkins1_main\\BlueOceanNew\\pom.xml test package'
+      }
+    }
+
   }
 }
